@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#FFF">
+  <RelativeLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:layout_gravity="right">
+			  <LinearLayout 
+			  	android:layout_width="fill_parent"
+			  	android:layout_height="wrap_content"
+			  	android:orientation="horizontal">
+			  		<Button 
+			  			android:layout_width="wrap_content"
+			  			android:layout_height="wrap_content"
+			  			android:text="Right"/>
+			  		<Button
+			  			android:layout_width="wrap_content"
+			  			android:layout_height="wrap_content"
+			  			android:layout_weight="1"
+			  			android:visibility="invisible"/>
+			  		<SlidingDrawer 
+			  			android:id="@+id/sDrawer"
+			  			android:layout_width="200dip"
+			  			android:layout_height="200dip"
+			  			android:handle="@+id/btnHandle"
+			  			android:content="@+id/contentLay">
+			  			
+			  				<Button
+			  					android:id="@+id/btnHandle"
+					  			android:layout_width="fill_parent"
+					  			android:layout_height="wrap_content"
+					  			android:drawableRight="@drawable/fold"
+					  			android:background="@android:color/transparent"/>
+					  		
+				  		<LinearLayout 
+				  			android:id="@+id/contentLay"
+				  			android:background="#00FF00"
+				  			android:layout_width="wrap_content"
+				  			android:layout_height="wrap_content">
+				  			<ListView 
+				  				android:id="@+id/lstName"
+				  				android:layout_width="wrap_content"
+				  				android:layout_height="wrap_content"></ListView>
+				  		</LinearLayout>	
+			  		</SlidingDrawer>
+			  </LinearLayout>
+  </RelativeLayout>
+  
+</LinearLayout>
